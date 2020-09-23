@@ -1,0 +1,49 @@
+Example:
+   title: "&eWho's your favorite Youtuber?"
+   subtitle: "&b<< Move around for more options >>"
+   button-radius: 4
+   button-hover-radius: 3
+   title-gap: 0.6
+   subtitle-gap: -1.3
+   # Optional (default = false), disallow player movement while entering this holobutton
+   freeze: true
+   # Optional (default = false), make the player in god-mode while entering this holobutton
+   invincible: true
+   # Optional, executed when the player closed this holobutton
+   on-close:
+   # available executor types:
+   # CONSOLE_COMMAND - Run command as console
+   # COMMAND - Run command as player
+   # CHAT - Send chat as player
+   - type: CONSOLE_COMMAND
+     value: "spawn {player}"
+   # Optional, executed when the player opened this holobutton
+   on-open:
+   - type: CONSOLE_COMMAND
+     value: "warp Lobby {player}"
+   buttons:
+   - item: DIRT
+     label: "&cLogan Paul"
+     close: true
+     executors:
+     - type: CONSOLE_COMMAND
+       value: "ban {player} LOGAN PAULER"
+     - type: CONSOLE_COMMAND
+       value: "say {player} is logan pauler"
+   - item: DIAMOND_BLOCK
+     label: "&aMrBeast"
+     close: true
+     executors:
+     - type: CONSOLE_COMMAND
+       value: "give {player} diamond 1"
+     - type: CHAT
+       value: "I love MrBeast"
+   - item: DIRT
+     label: "&cJake Paul"
+     close: true
+     executors:
+     - type: CONSOLE_COMMAND
+       value: "ban {player} JAKE PAULER"
+     - type: CONSOLE_COMMAND
+       value: "say {player} is jake pauler"
+# You can create your own buttons here

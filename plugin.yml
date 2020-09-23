@@ -1,0 +1,10 @@
+name: HoloButton
+version: 1.0
+author: Septogeddon
+main: septogeddon.holobutton.HoloButtonPlugin
+api-version: 1.13
+softdepend:
+- ProtocolLib
+commands:
+   holobutton:
+      description: HoloButton command
